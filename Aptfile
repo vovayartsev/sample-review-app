@@ -1,2 +1,3 @@
+:repo:deb https://download.docker.com/linux/ubuntu xenial stable
 docker-ce
 docker-compose

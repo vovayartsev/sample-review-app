@@ -1,0 +1,10 @@
+{
+  "name": "buildpack-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Vladimir Yartsev <vovayartsev@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "dockhero": "^1.0.20"
+  }
+}
