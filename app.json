@@ -1,0 +1,12 @@
+{
+    "name":"Advanced App",
+    "scripts": {
+        "release": "./release.sh"
+    },
+    "addons": ["dockhero:standard"],
+    "env": {
+        "HEROKU_APP_NAME": {
+            "required": true
+        }
+    }
+}
