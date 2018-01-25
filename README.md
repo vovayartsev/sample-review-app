@@ -32,7 +32,9 @@ Mention `HEROKU_APP_NAME` as a required env variable - it's required for Dockher
 around `docker` and `docker-compose`. This means we need to pre-install Docker CE too - we do this via Aptfile.
 
 DOCKHERO_HOST environment variable is set by Dockhero addon within 1-2 minutes after add-on provisioning.
-In the actual buildpack, we should simulate `heroku dh:wait`, but in this example we just added `sleep 120`.
+In the actual buildpack, we should simulate `heroku dh:wait`, but in this example we just added `sleep 120` to `.heroku/run.sh`.
+
+Each time you create a PR in Github, Heroku creates a Review App. Buildpacks install required Docker components and Dockhero CLI tools (npm package). The actual `dh-compose up -d` is happening in post-deploy hook.
 
 ## Caveats
 
