@@ -1,6 +1,9 @@
 {
     "name":"Advanced App",
-    "addons": [],
+    "addons": ["dockhero:standard"],
+    "scripts": {
+        "postdeploy": "CURL_CA_BUNDLE= yarn postdeploy"
+    },
     "env": {
         "HEROKU_APP_NAME": {
             "required": true
@@ -9,6 +12,9 @@
     "buildpacks": [
         {
             "url": "https://github.com/heroku/heroku-buildpack-apt"
+        },
+        {
+            "url": "heroku/nodejs"
         },
         {
             "url": "https://github.com/niteoweb/heroku-buildpack-shell.git"
