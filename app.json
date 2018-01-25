@@ -1,9 +1,9 @@
 {
     "name":"Advanced App",
     "scripts": {
-        "release": "./release.sh"
+        "postdeploy": "./postdeploy.sh"
     },
-    "addons": ["dockhero:standard"],
+    "addons": ["dockhero:standard-free"],
     "env": {
         "HEROKU_APP_NAME": {
             "required": true
