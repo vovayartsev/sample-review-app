@@ -1,0 +1,14 @@
+{
+  "name": "buildpack-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:vovayartsev/sample-review-app.git",
+  "author": "Vladimir Yartsev <vovayartsev@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "dockhero": "^1.0.22"
+  },
+  "scripts": {
+    "dh-compose": "dh-compose"
+  }
+}
