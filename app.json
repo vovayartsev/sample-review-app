@@ -2,7 +2,7 @@
     "name":"Advanced App",
     "addons": ["dockhero:standard"],
     "scripts": {
-        "postdeploy": "yarn dh-compose up -d"
+        "postdeploy": "yarn postdeploy"
     },
     "env": {
         "HEROKU_APP_NAME": {
@@ -15,9 +15,6 @@
         },
         {
             "url": "heroku/nodejs"
-        },
-        {
-            "url": "https://github.com/niteoweb/heroku-buildpack-shell.git"
         }
     ]
 }

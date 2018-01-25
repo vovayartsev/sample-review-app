@@ -6,9 +6,9 @@
   "author": "Vladimir Yartsev <vovayartsev@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "dockhero": "^1.0.22"
+    "dockhero": "^1.0.23"
   },
   "scripts": {
-    "dh-compose": "dh-compose"
+    "postdeploy": "sleep 100 && dh-compose up -d"
   }
 }

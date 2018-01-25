@@ -146,9 +146,9 @@ decompress-response@^3.3.0:
   dependencies:
     mimic-response "^1.0.0"
 
-dockhero@^1.0.22:
-  version "1.0.22"
-  resolved "https://registry.yarnpkg.com/dockhero/-/dockhero-1.0.22.tgz#f02023085dc71f26597be272e4b245a91cd3e7c6"
+dockhero@^1.0.23:
+  version "1.0.23"
+  resolved "https://registry.yarnpkg.com/dockhero/-/dockhero-1.0.23.tgz#53aa19ff6298aca2a4afae35549890028bd1591c"
   dependencies:
     bluebird "^3.4.6"
     co "^4.6.0"
