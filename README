@@ -1,0 +1,18 @@
+# Using Dockhero with Heroku Review Apps
+
+Background: you can add Dockhero add-on to your app manifest to have this add-on in your
+ Review Apps created automatically by Heroku for each pull request in Github.
+
+## Problem
+
+`dockhero-compose.yml` still needs to be deployed manually
+
+
+## Solution
+
+This is a proof-of-concept of a buildpack-based Dockhero automatic deployment approach.
+It has lots of moving parts and could be turned into a separate buildpack down the road.
+
+1. Create app.json in you Github repo to enable Review Apps. Mention `HEROKU_APP_NAME` as a required env variable - it's required for Dockhero operations.
+
+2. Add two buildpacks to app.json: heroku-buildpack-apt and heroku-buildpack-shell (in this specific order)

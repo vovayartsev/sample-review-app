@@ -1,0 +1,8 @@
+version: "2"
+
+services:
+  app:
+    image: dockhero/dockhero-docs:hello
+    restart: "on-failure:10"
+    ports:
+      - "80:8080"

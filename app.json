@@ -1,9 +1,6 @@
 {
     "name":"Advanced App",
-    "scripts": {
-        "postdeploy": "./postdeploy.sh"
-    },
-    "addons": ["dockhero:standard-free"],
+    "addons": [],
     "env": {
         "HEROKU_APP_NAME": {
             "required": true
@@ -14,7 +11,7 @@
             "url": "https://github.com/heroku/heroku-buildpack-apt"
         },
         {
-            "url": "heroku/nodejs"
+            "url": "https://github.com/niteoweb/heroku-buildpack-shell.git"
         }
     ]
 }
