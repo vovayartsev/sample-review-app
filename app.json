@@ -1,0 +1,20 @@
+{
+    "name":"Advanced App",
+    "addons": ["dockhero:hobby"],
+    "scripts": {
+        "postdeploy": "dh-compose up -d"
+    },
+    "env": {
+        "HEROKU_APP_NAME": {
+            "required": true
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "https://github.com/dockhero/heroku-buildpack-docker-compose.git"
+        },
+        {
+            "url": "heroku/nodejs"
+        }
+    ]
+}

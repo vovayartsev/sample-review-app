@@ -1,0 +1,13 @@
+{
+  "name": "buildpack-demo-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Vladimir Yartsev <vovayartsev@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "dockhero": "^1.0.24"
+  },
+  "scripts": {
+    "postdeploy": "dh-compose up -d"
+  }
+}
