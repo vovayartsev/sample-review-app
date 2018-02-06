@@ -5,9 +5,11 @@
   "author": "Vladimir Yartsev <vovayartsev@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "dockhero": "^1.0.24"
+    "dockhero": "^1.0.24",
+    "koa": "^2.4.1"
   },
   "scripts": {
-    "postdeploy": "dh-compose up -d"
+    "postdeploy": "dh-compose up -d",
+    "start": "node index.js"
   }
 }
