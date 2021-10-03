@@ -5,7 +5,7 @@
   "author": "Vladimir Yartsev <vovayartsev@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "dockhero": "^1.0.24",
+    "dockhero": "^1.2.1",
     "koa": "^2.4.1"
   },
   "scripts": {
